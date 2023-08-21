@@ -12,7 +12,7 @@ import {
 export const Statistics = ({ stats, title }) => {
   return (
     <StatisticsSection>
-      <Title>Upload stats</Title>
+      {title && <Title>{title}</Title>}
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id}>
